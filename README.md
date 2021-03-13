@@ -1,4 +1,4 @@
-# Medusa - Generate SQL data models for testing
+# Medusa - Generate random SQL data models
 Run with Docker:
 ```she;;
 docker run --rm -it -v "$PWD":/work elibouassaba/medusa
