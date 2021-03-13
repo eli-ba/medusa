@@ -2,5 +2,5 @@
 Run with Docker:
 ```she;;
 docker run --rm -it -v "$PWD":/work elibouassaba/medusa
-shell:>generate
+shell:>generate /work/medusa.sql
 ```

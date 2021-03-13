@@ -21,9 +21,8 @@ class Commands {
     ) {
         val sql = StringBuilder()
 
-        val tables = TableGenerator(tableCount!!)
-            .generate()
-            .forEach { sql.append(it.render()).append("\n\n") }
+        val tables = TableGenerator(tableCount!!).generate()
+        tables.forEach { sql.append(it.render()).append("\n\n") }
 
         PrimaryKeyConstraintGenerator(tables as List<Table>)
             .generate()
