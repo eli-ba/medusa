@@ -4,3 +4,4 @@ Run with Docker:
 docker run --rm -it -v "$PWD":/work elibouassaba/medusa
 shell:>generate /work/medusa.sql
 ```
+The `./medusa.sql` file will be generated in the current directory.
