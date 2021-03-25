@@ -7,5 +7,5 @@ import org.springframework.boot.runApplication
 class MedusaApplication
 
 fun main(args: Array<String>) {
-	runApplication<MedusaApplication>(*args)
+    runApplication<MedusaApplication>(*args)
 }

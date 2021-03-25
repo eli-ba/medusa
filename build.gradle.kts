@@ -16,13 +16,14 @@ repositories {
 }
 
 dependencies {
-	implementation("org.springframework.boot:spring-boot-starter")
-	implementation("org.springframework.shell:spring-shell-starter:2.0.1.RELEASE")
+	implementation("org.springframework.boot:spring-boot-starter-web")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("com.github.javafaker:javafaker:1.0.2")
 	implementation("org.apache.commons:commons-math3:3.6.1")
 	implementation("commons-io:commons-io:2.6")
+	implementation("io.springfox:springfox-swagger2:2.9.2")
+	implementation("org.springdoc:springdoc-openapi-ui:1.5.2")
 }
 
 tasks.withType<KotlinCompile> {
