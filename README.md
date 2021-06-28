@@ -1,14 +1,19 @@
 # Medusa - Generate random SQL data models
-Run with Docker:
+## Run with Docker
+Build:
 ```shell
-docker run --rm -it -v "$PWD":/work elibouassaba/medusa
+docker build -t medusa .
 ```
-Generate for Oracle:
+Run:
 ```shell
-curl -X GET "http://localhost:8080/oracle"
+docker run --rm -it -v "$PWD":/work medusa
 ```
-Generate for MySQL:
+## Generate for MySQL:
 ```shell
 curl -X GET "http://localhost:8080/mysql"
+```
+## Generate for Oracle:
+```shell
+curl -X GET "http://localhost:8080/oracle"
 ```
 Check http://localhost:8080/swagger-ui.html for additional parameters.
