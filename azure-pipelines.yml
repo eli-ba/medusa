@@ -16,7 +16,7 @@ stages:
     - task: Docker@2
       displayName: medusa
       inputs:
-        repository: elibouassaba/medusa
+        repository: eliasba/medusa
         command: buildAndPush
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         containerRegistry: |
